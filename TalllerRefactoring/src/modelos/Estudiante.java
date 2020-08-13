@@ -13,7 +13,12 @@ public class Estudiante{
     public String telefono;
     public ArrayList<Paralelo> paralelos;
     
-   
+   public Estudiante(String matricula,String nombre,String apellido, String facultad){
+       this.matricula=matricula;
+       this.nombre=nombre;
+       this.apellido=apellido;
+       this.facultad=facultad;
+   }
     
     //Calcula y devuelve la nota inicial contando examen, deberes, lecciones y talleres. El teorico y el practico se calcula por parcial.
     public double CalcularNota(Paralelo p, double nexamen,double ndeberes, double nlecciones, double ntalleres){
